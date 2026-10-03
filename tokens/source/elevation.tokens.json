@@ -1,0 +1,15 @@
+{
+  "format": "repo-md3-token-v1",
+  "provenance": "official-md3",
+  "baseline": "classic-md3-2024-zh-cn",
+  "levels": {
+    "level0": 0,
+    "level1": 1,
+    "level2": 3,
+    "level3": 6,
+    "level4": 8,
+    "level5": 12
+  },
+  "unit": "logical-dp",
+  "note": "M3 同时使用 tonal elevation；阴影不是表达层级的唯一手段。"
+}

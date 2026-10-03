@@ -1,0 +1,96 @@
+schema_version: 1
+platforms:
+- id: web
+  name: Web
+  stack:
+  - HTML
+  - CSS
+  - JavaScript
+  framework_relation: custom-md3
+  repo_state: experimental
+  verification: Node syntax + static validation
+  official_sources:
+  - material-web
+  - wai-aria-apg
+  - wcag22
+  notes: 默认不依赖 @material/web；可按组件评估使用，但该库处于 maintenance mode。
+- id: android
+  name: Android
+  stack:
+  - Kotlin
+  - Jetpack Compose
+  - Compose Material 3
+  framework_relation: official-native
+  repo_state: documented
+  verification: static only in current environment
+  official_sources:
+  - android-md3-compose
+  - android-md3-releases
+  - android-adaptive
+  - android-accessibility
+  notes: 优先官方 Material3 composables；只使用 Classic M3 语义。
+- id: harmonyos
+  name: HarmonyOS
+  stack:
+  - ArkTS
+  - ArkUI
+  - DevEco Studio
+  framework_relation: custom-md3
+  repo_state: documented
+  verification: static only; DevEco Studio required for runtime validation
+  official_sources:
+  - harmony-doc-center
+  - harmony-arkts
+  notes: ArkUI 是平台 UI 框架，不是 Material 3。
+- id: ios
+  name: iOS/iPadOS
+  stack:
+  - Swift
+  - SwiftUI
+  framework_relation: custom-md3
+  repo_state: documented
+  verification: static only; macOS/Xcode required
+  official_sources:
+  - apple-swiftui-accessibility
+  - apple-layout
+  notes: 视觉层实现 M3，系统行为遵守 Apple 平台约束。
+- id: windows
+  name: Windows
+  stack:
+  - C#
+  - WinUI 3
+  - Windows App SDK
+  - XAML
+  framework_relation: custom-md3
+  repo_state: documented
+  verification: static only; Windows build host required
+  official_sources:
+  - windows-winui3
+  - windows-controls
+  - windows-xaml-styles
+  notes: WinUI 3 默认面向 Fluent；本仓库使用 ResourceDictionary 与样式映射 M3。
+- id: linux-gtk
+  name: Linux GTK
+  stack:
+  - GTK 4
+  - CSS
+  - optional libadwaita
+  framework_relation: custom-md3
+  repo_state: documented
+  verification: static only; GTK4 dev packages absent in current environment
+  official_sources:
+  - gtk-accessibility
+  - libadwaita
+  notes: Adwaita 不等于 M3；若使用 libadwaita，仅复用平台能力，不继承其视觉语言。
+- id: linux-qt
+  name: Linux Qt
+  stack:
+  - Qt 6
+  - QML
+  - Qt Quick Controls
+  framework_relation: partial
+  repo_state: documented
+  verification: static only; Qt6 dev packages absent in current environment
+  official_sources:
+  - qt-material-style
+  notes: Qt Material Style 不能自动视为当前 Classic M3 合规；需按 token/组件逐项审查。

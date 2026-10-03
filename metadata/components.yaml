@@ -1,0 +1,689 @@
+schema_version: 1
+baseline: classic-md3-2024-zh-cn
+component_count: 31
+components:
+- id: buttons
+  name_zh: 按钮
+  category: actions
+  purpose: 触发明确操作。
+  variants:
+  - elevated
+  - filled
+  - filled-tonal
+  - outlined
+  - text
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: 可访问名称必须描述动作；不可只依赖颜色表达状态。
+  official_url: https://m3.material.io/components/buttons/overview
+  baseline: classic-md3-2024-zh-cn
+- id: floating-action-button
+  name_zh: 浮动操作按钮
+  category: actions
+  purpose: 突出当前界面的高优先级操作。
+  variants:
+  - small
+  - regular
+  - large
+  - extended
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: 不要把 FAB 当作所有页面的必需元素；大屏可根据信息架构调整位置。
+  accessibility: 图标型 FAB 必须具有可访问名称。
+  official_url: https://m3.material.io/components/floating-action-button/overview
+  baseline: classic-md3-2024-zh-cn
+- id: icon-buttons
+  name_zh: 图标按钮
+  category: actions
+  purpose: 以紧凑图标承载常用操作。
+  variants:
+  - standard
+  - filled
+  - filled-tonal
+  - outlined
+  - toggle
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: 图标按钮必须有可访问名称，并维持足够交互目标。
+  official_url: https://m3.material.io/components/icon-buttons/overview
+  baseline: classic-md3-2024-zh-cn
+- id: segmented-buttons
+  name_zh: 分段按钮
+  category: actions
+  purpose: 在少量互斥或多选选项间切换。
+  variants:
+  - single-select
+  - multi-select
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: 必须暴露组关系与选中状态。
+  official_url: https://m3.material.io/components/segmented-buttons/overview
+  baseline: classic-md3-2024-zh-cn
+- id: badges
+  name_zh: 徽标
+  category: communication
+  purpose: 在图标或导航目标附近传达数量或状态。
+  variants:
+  - small
+  - large
+  states:
+  - default
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: 不要让徽标成为唯一信息来源；数量或状态应可被辅助技术获取。
+  official_url: https://m3.material.io/components/badges/overview
+  baseline: classic-md3-2024-zh-cn
+- id: progress-indicators
+  name_zh: 进度指示器
+  category: communication
+  purpose: 表示加载或任务进度。
+  variants:
+  - linear-determinate
+  - linear-indeterminate
+  - circular-determinate
+  - circular-indeterminate
+  states:
+  - default
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: 确定进度应暴露当前值；不确定进度应提供合适的加载语义。
+  official_url: https://m3.material.io/components/progress-indicators/overview
+  baseline: classic-md3-2024-zh-cn
+- id: snackbars
+  name_zh: Snackbar
+  category: communication
+  purpose: 短暂反馈轻量结果，并可附带一个相关操作。
+  variants:
+  - single-line
+  - two-line
+  - with-action
+  states:
+  - default
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: 消息出现时不能任意抢夺焦点；重要错误不可仅靠 Snackbar。
+  official_url: https://m3.material.io/components/snackbars/overview
+  baseline: classic-md3-2024-zh-cn
+- id: tooltips
+  name_zh: 工具提示
+  category: communication
+  purpose: 解释陌生图标或提供补充信息。
+  variants:
+  - plain
+  - rich
+  states:
+  - hidden
+  - visible
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: 不能把完成任务所必需的信息只藏在 hover 中；键盘焦点也应可触达。
+  official_url: https://m3.material.io/components/tooltips/overview
+  baseline: classic-md3-2024-zh-cn
+- id: bottom-sheets
+  name_zh: 底部 Sheet
+  category: containment
+  purpose: 从屏幕底部承载补充内容或任务。
+  variants:
+  - standard
+  - modal
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: 模态 Sheet 必须管理焦点并限制背景交互。
+  official_url: https://m3.material.io/components/bottom-sheets/overview
+  baseline: classic-md3-2024-zh-cn
+- id: cards
+  name_zh: 卡片
+  category: containment
+  purpose: 将相关内容和操作组织为单一容器。
+  variants:
+  - elevated
+  - filled
+  - outlined
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: 卡片仅在整体可操作时才应作为单一交互目标。
+  official_url: https://m3.material.io/components/cards/overview
+  baseline: classic-md3-2024-zh-cn
+- id: carousel
+  name_zh: 轮播
+  category: containment
+  purpose: 在有限空间中横向浏览一组相关内容。
+  variants:
+  - multi-browse
+  - uncontained
+  - hero
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: 必须提供可预测的键盘/辅助技术浏览方式，并避免自动滚动造成障碍。
+  official_url: https://m3.material.io/components/carousel/overview
+  baseline: classic-md3-2024-zh-cn
+- id: dialogs
+  name_zh: 对话框
+  category: containment
+  purpose: 要求确认、选择或完成短任务。
+  variants:
+  - basic
+  - fullscreen
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: 打开后将焦点移入，关闭后返回合理触发点；必须有可访问标题/名称。
+  official_url: https://m3.material.io/components/dialogs/overview
+  baseline: classic-md3-2024-zh-cn
+- id: divider
+  name_zh: 分隔线
+  category: containment
+  purpose: 在不增加强容器的情况下区分内容。
+  variants:
+  - full-width
+  - inset
+  states:
+  - default
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: 纯视觉分隔通常不应创建多余可访问节点。
+  official_url: https://m3.material.io/components/divider/overview
+  baseline: classic-md3-2024-zh-cn
+- id: lists
+  name_zh: 列表
+  category: containment
+  purpose: 垂直排列同类信息、选择或操作。
+  variants:
+  - one-line
+  - two-line
+  - three-line
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: 大屏可与详情窗格组合。
+  accessibility: 保持项的语义、顺序与可操作区域清晰。
+  official_url: https://m3.material.io/components/lists/overview
+  baseline: classic-md3-2024-zh-cn
+- id: side-sheets
+  name_zh: 侧边 Sheet
+  category: containment
+  purpose: 在较宽窗口中从侧边提供补充内容。
+  variants:
+  - standard
+  - modal
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: 主要用于具备足够宽度的界面；紧凑窗口优先替代布局。
+  accessibility: 模态版本需要焦点约束与关闭机制。
+  official_url: https://m3.material.io/components/side-sheets/overview
+  baseline: classic-md3-2024-zh-cn
+- id: bottom-app-bar
+  name_zh: 底部应用栏
+  category: navigation
+  purpose: 在移动端底部放置主要操作，可与 FAB 配合。
+  variants:
+  - standard
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: 每个操作必须有清晰名称；避免与系统手势区域冲突。
+  official_url: https://m3.material.io/components/bottom-app-bar/overview
+  baseline: classic-md3-2024-zh-cn
+- id: top-app-bar
+  name_zh: 顶部应用栏
+  category: navigation
+  purpose: 承载页面标题、导航和主要操作。
+  variants:
+  - center-aligned
+  - small
+  - medium
+  - large
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: 大屏不应机械拉伸移动端应用栏。
+  accessibility: 标题层级和操作顺序应与视觉顺序一致。
+  official_url: https://m3.material.io/components/top-app-bar/overview
+  baseline: classic-md3-2024-zh-cn
+- id: navigation-bar
+  name_zh: 导航栏
+  category: navigation
+  purpose: 在紧凑窗口底部切换少量主要目的地。
+  variants:
+  - standard
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: 中大窗口应评估 navigation rail/drawer。
+  accessibility: 目的地必须暴露当前选中状态。
+  official_url: https://m3.material.io/components/navigation-bar/overview
+  baseline: classic-md3-2024-zh-cn
+- id: navigation-drawer
+  name_zh: 导航抽屉
+  category: navigation
+  purpose: 显示应用顶层目的地和分组。
+  variants:
+  - standard
+  - modal
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: expanded 窗口可常驻；compact 可模态出现。
+  accessibility: 模态抽屉需管理焦点和关闭。
+  official_url: https://m3.material.io/components/navigation-drawer/overview
+  baseline: classic-md3-2024-zh-cn
+- id: navigation-rail
+  name_zh: 导航栏轨
+  category: navigation
+  purpose: 在中等或较宽窗口侧边显示主要目的地。
+  variants:
+  - standard
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: 常用于 medium/expanded 窗口。
+  accessibility: 目的地需暴露选中状态并支持键盘顺序。
+  official_url: https://m3.material.io/components/navigation-rail/overview
+  baseline: classic-md3-2024-zh-cn
+- id: search
+  name_zh: 搜索
+  category: navigation
+  purpose: 启动、输入和呈现搜索。
+  variants:
+  - bar
+  - view
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: 输入必须有名称；结果更新应适当通知辅助技术。
+  official_url: https://m3.material.io/components/search/overview
+  baseline: classic-md3-2024-zh-cn
+- id: tabs
+  name_zh: 标签页
+  category: navigation
+  purpose: 在同层级相关内容视图之间切换。
+  variants:
+  - primary
+  - secondary
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: 实现 tablist/tab/tabpanel 等等价平台语义与键盘行为。
+  official_url: https://m3.material.io/components/tabs/overview
+  baseline: classic-md3-2024-zh-cn
+- id: checkbox
+  name_zh: 复选框
+  category: selection
+  purpose: 在独立选项或一组选项中切换选择。
+  variants:
+  - unchecked
+  - checked
+  - indeterminate
+  states:
+  - unchecked
+  - checked
+  - indeterminate
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: 必须暴露 checked/indeterminate 状态。
+  official_url: https://m3.material.io/components/checkbox/overview
+  baseline: classic-md3-2024-zh-cn
+- id: chips
+  name_zh: Chip
+  category: selection
+  purpose: 表示过滤、输入、建议或辅助动作。
+  variants:
+  - assist
+  - filter
+  - input
+  - suggestion
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: 不同 chip 类型必须有与行为一致的角色，不要一律伪装成按钮。
+  official_url: https://m3.material.io/components/chips/overview
+  baseline: classic-md3-2024-zh-cn
+- id: date-pickers
+  name_zh: 日期选择器
+  category: selection
+  purpose: 选择单个日期或日期范围。
+  variants:
+  - docked
+  - modal
+  - range
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: 日期单元需有完整日期名称、选中状态和键盘导航。
+  official_url: https://m3.material.io/components/date-pickers/overview
+  baseline: classic-md3-2024-zh-cn
+- id: menus
+  name_zh: 菜单
+  category: selection
+  purpose: 展示临时操作或选项集合。
+  variants:
+  - dropdown
+  - contextual
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: 使用平台菜单语义并正确管理方向键、Escape 与焦点返回。
+  official_url: https://m3.material.io/components/menus/overview
+  baseline: classic-md3-2024-zh-cn
+- id: radio-button
+  name_zh: 单选按钮
+  category: selection
+  purpose: 从互斥集合中选择一个选项。
+  variants:
+  - unselected
+  - selected
+  states:
+  - unselected
+  - selected
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: 必须暴露组和单选语义。
+  official_url: https://m3.material.io/components/radio-button/overview
+  baseline: classic-md3-2024-zh-cn
+- id: sliders
+  name_zh: 滑块
+  category: selection
+  purpose: 在连续或离散范围内选择数值。
+  variants:
+  - continuous
+  - discrete
+  - range
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: 提供最小值、最大值、当前值及键盘/辅助技术调整能力。
+  official_url: https://m3.material.io/components/sliders/overview
+  baseline: classic-md3-2024-zh-cn
+- id: switch
+  name_zh: 开关
+  category: selection
+  purpose: 即时切换二元设置。
+  variants:
+  - 'off'
+  - 'on'
+  states:
+  - 'off'
+  - 'on'
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: 标签必须说明被切换的设置；暴露 on/off 状态。
+  official_url: https://m3.material.io/components/switch/overview
+  baseline: classic-md3-2024-zh-cn
+- id: time-pickers
+  name_zh: 时间选择器
+  category: selection
+  purpose: 输入或选择时间。
+  variants:
+  - dial
+  - input
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: 每个时间字段或刻度应有清晰名称和当前值。
+  official_url: https://m3.material.io/components/time-pickers/overview
+  baseline: classic-md3-2024-zh-cn
+- id: text-fields
+  name_zh: 文本字段
+  category: text-input
+  purpose: 输入或编辑文本。
+  variants:
+  - filled
+  - outlined
+  states:
+  - empty
+  - focused
+  - populated
+  - error
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: 必须有持久可访问名称；错误信息不能只靠颜色，并应与字段建立语义关联。
+  official_url: https://m3.material.io/components/text-fields/overview
+  baseline: classic-md3-2024-zh-cn

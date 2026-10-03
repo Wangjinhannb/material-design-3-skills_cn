@@ -1,0 +1,283 @@
+schema_version: 1
+retrieved_at: '2026-10-03'
+sources:
+- id: md3-home
+  title: Material Design 3
+  organization: Google Material Design
+  url: https://m3.material.io/
+  retrieved_at: '2026-10-03'
+  category: official-md3
+  status: current-site
+  normative_or_informative: normative-design-guidance
+  license_or_usage_notes: 仅摘要和引用，不复制大段官方文本。
+  notes: 网站依赖 JavaScript；本仓库对当前页面内容进行 Classic M3 与 Expressive 边界审查。
+- id: md3-color-roles
+  title: Color roles - Material Design 3
+  organization: Google Material Design
+  url: https://m3.material.io/styles/color/roles
+  retrieved_at: '2026-10-03'
+  category: official-md3
+  status: current-site
+  normative_or_informative: normative-design-guidance
+  license_or_usage_notes: 仅引用与转述。
+  notes: 颜色角色的主要设计来源。
+- id: md3-typography
+  title: Typography - Material Design 3
+  organization: Google Material Design
+  url: https://m3.material.io/styles/typography/overview
+  retrieved_at: '2026-10-03'
+  category: official-md3
+  status: current-site
+  normative_or_informative: normative-design-guidance
+  license_or_usage_notes: 仅引用与转述。
+  notes: Classic M3 15 个 type roles 的主要来源。
+- id: md3-elevation
+  title: Elevation - Material Design 3
+  organization: Google Material Design
+  url: https://m3.material.io/styles/elevation/overview
+  retrieved_at: '2026-10-03'
+  category: official-md3
+  status: current-site
+  normative_or_informative: normative-design-guidance
+  license_or_usage_notes: 仅引用与转述。
+  notes: 用于层级与 tonal elevation 说明。
+- id: md3-states
+  title: States - Material Design 3
+  organization: Google Material Design
+  url: https://m3.material.io/foundations/interaction/states
+  retrieved_at: '2026-10-03'
+  category: official-md3
+  status: current-site
+  normative_or_informative: normative-design-guidance
+  license_or_usage_notes: 仅引用与转述。
+  notes: 用于 hover/focus/pressed/dragged 等状态。
+- id: md3-components
+  title: Components - Material Design 3
+  organization: Google Material Design
+  url: https://m3.material.io/components
+  retrieved_at: '2026-10-03'
+  category: official-md3
+  status: current-site
+  normative_or_informative: normative-design-guidance
+  license_or_usage_notes: 仅引用与转述。
+  notes: 组件目录入口；仓库冻结为 Classic M3 baseline。
+- id: android-md3-compose
+  title: Material Design 3 in Compose
+  organization: Google Android Developers
+  url: https://developer.android.com/develop/ui/compose/designsystems/material3
+  retrieved_at: '2026-10-03'
+  category: official-implementation
+  status: current
+  normative_or_informative: implementation-guidance
+  license_or_usage_notes: 遵守 Android Developers 内容许可。
+  notes: 当前页面同时包含 Material 3 Expressive 信息；本仓库只采用 Classic M3 能力。
+- id: android-md3-releases
+  title: Compose Material 3 release notes
+  organization: Google Android Developers
+  url: https://developer.android.com/jetpack/androidx/releases/compose-material3
+  retrieved_at: '2026-10-03'
+  category: official-implementation
+  status: current
+  normative_or_informative: implementation-version-source
+  license_or_usage_notes: 仅记录版本和 API 状态。
+  notes: 2026-09-23 稳定版 1.4.0；当前库包含 Expressive API，不能据此自动扩大 baseline。
+- id: android-md3-colorscheme
+  title: ColorScheme API
+  organization: Google Android Developers
+  url: https://developer.android.com/reference/kotlin/androidx/compose/material3/ColorScheme
+  retrieved_at: '2026-10-03'
+  category: official-implementation
+  status: current
+  normative_or_informative: implementation-reference
+  license_or_usage_notes: 仅摘要 API。
+  notes: 确认 surface container 与 fixed color roles 等角色在 Compose Material 3 中存在。
+- id: android-adaptive
+  title: Get started with adaptive apps
+  organization: Google Android Developers
+  url: https://developer.android.com/develop/adaptive-apps/guides/get-started-with-adaptive-apps
+  retrieved_at: '2026-10-03'
+  category: official-implementation
+  status: current
+  normative_or_informative: implementation-guidance
+  license_or_usage_notes: 仅转述。
+  notes: 用于 Android 大屏、可折叠和自适应导航。
+- id: android-accessibility
+  title: Accessibility in Jetpack Compose
+  organization: Google Android Developers
+  url: https://developer.android.com/develop/ui/compose/accessibility
+  retrieved_at: '2026-10-03'
+  category: accessibility
+  status: current
+  normative_or_informative: implementation-guidance
+  license_or_usage_notes: 仅转述。
+  notes: Compose semantics、缩放、遍历和测试。
+- id: material-web
+  title: Material Web repository
+  organization: Google Material Components
+  url: https://github.com/material-components/material-web
+  retrieved_at: '2026-10-03'
+  category: official-implementation
+  status: maintenance-mode
+  normative_or_informative: implementation-reference
+  license_or_usage_notes: Apache-2.0；不捆绑其代码。
+  notes: 仓库明确说明 @material/web 处于 maintenance mode；不作为本项目唯一 Web 实现基础。
+- id: material-symbols
+  title: Material Symbols guide
+  organization: Google Fonts
+  url: https://developers.google.com/fonts/docs/material_symbols
+  retrieved_at: '2026-10-03'
+  category: official-assets
+  status: current
+  normative_or_informative: implementation-guidance
+  license_or_usage_notes: Material Symbols 为 Apache-2.0；本仓库不直接打包字体二进制。
+  notes: 包含 fill、weight、grade、optical size 四个可变轴。
+- id: dtcg-format-2025-10
+  title: Design Tokens Format Module 2025.10
+  organization: Design Tokens Community Group
+  url: https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/
+  retrieved_at: '2026-10-03'
+  category: token-format
+  status: stable-community-final-report
+  normative_or_informative: token-format-reference
+  license_or_usage_notes: Community Final Specification Agreement；不是 W3C Recommendation。
+  notes: 用于颜色 token 的跨工具交换格式。
+- id: dtcg-color-2025-10
+  title: Design Tokens Color Module 2025.10
+  organization: Design Tokens Community Group
+  url: https://www.w3.org/community/reports/design-tokens/CG-FINAL-color-20251028/
+  retrieved_at: '2026-10-03'
+  category: token-format
+  status: stable-community-final-report
+  normative_or_informative: token-format-reference
+  license_or_usage_notes: Community Final Specification Agreement。
+  notes: 用于颜色值和透明度结构。
+- id: dtcg-resolver-2025-10
+  title: Design Tokens Resolver Module 2025.10
+  organization: Design Tokens Community Group
+  url: https://www.w3.org/community/reports/design-tokens/CG-FINAL-resolver-20251028/
+  retrieved_at: '2026-10-03'
+  category: token-format
+  status: stable-community-final-report
+  normative_or_informative: token-format-reference
+  license_or_usage_notes: Community Final Specification Agreement。
+  notes: 记录但 v0.1.0 暂不实现完整 resolver module；主题分文件处理。
+- id: harmony-doc-center
+  title: HarmonyOS documentation center
+  organization: Huawei Developers
+  url: https://developer.huawei.com/consumer/cn/doc/
+  retrieved_at: '2026-10-03'
+  category: official-platform
+  status: current
+  normative_or_informative: implementation-reference
+  license_or_usage_notes: 遵守华为开发者文档条款。
+  notes: ArkTS 是主力应用开发语言，ArkUI 提供 UI 基础设施。
+- id: harmony-arkts
+  title: ArkTS
+  organization: Huawei Developers
+  url: https://developer.huawei.com/consumer/en/arkts/
+  retrieved_at: '2026-10-03'
+  category: official-platform
+  status: current
+  normative_or_informative: implementation-reference
+  license_or_usage_notes: 仅转述。
+  notes: 用于 ArkTS 语言与声明式 UI 能力边界。
+- id: apple-swiftui-accessibility
+  title: Accessibility fundamentals in SwiftUI
+  organization: Apple Developer
+  url: https://developer.apple.com/documentation/swiftui/accessibility-fundamentals
+  retrieved_at: '2026-10-03'
+  category: official-platform
+  status: current
+  normative_or_informative: implementation-guidance
+  license_or_usage_notes: 仅转述。
+  notes: SwiftUI 标准控件具有基础无障碍支持，可用 accessibility modifiers 增强。
+- id: apple-layout
+  title: Layout - Human Interface Guidelines
+  organization: Apple Developer
+  url: https://developer.apple.com/design/human-interface-guidelines/layout
+  retrieved_at: '2026-10-03'
+  category: official-platform
+  status: current
+  normative_or_informative: platform-behavior-guidance
+  license_or_usage_notes: 仅转述。
+  notes: 用于 safe area、窗口变化、文本缩放和 RTL 等平台行为约束，不作为视觉语言。
+- id: windows-winui3
+  title: WinUI 3
+  organization: Microsoft Learn
+  url: https://learn.microsoft.com/windows/apps/winui/
+  retrieved_at: '2026-10-03'
+  category: official-platform
+  status: current
+  normative_or_informative: implementation-reference
+  license_or_usage_notes: 仅转述。
+  notes: WinUI 3 是 Windows 新桌面应用推荐原生 UI 框架，默认面向 Fluent；本项目在其上实现 M3 视觉层。
+- id: windows-controls
+  title: Controls for Windows apps
+  organization: Microsoft Learn
+  url: https://learn.microsoft.com/windows/apps/design/controls/
+  retrieved_at: '2026-10-03'
+  category: official-platform
+  status: current
+  normative_or_informative: implementation-reference
+  license_or_usage_notes: 仅转述。
+  notes: 用于 WinUI 控件映射和输入行为。
+- id: windows-xaml-styles
+  title: XAML styles
+  organization: Microsoft Learn
+  url: https://learn.microsoft.com/windows/apps/design/style/xaml-styles
+  retrieved_at: '2026-10-03'
+  category: official-platform
+  status: current
+  normative_or_informative: implementation-reference
+  license_or_usage_notes: 仅转述。
+  notes: 用于 ResourceDictionary、样式和控件状态映射。
+- id: gtk-accessibility
+  title: GTK 4 Accessibility
+  organization: GTK
+  url: https://docs.gtk.org/gtk4/section-accessibility.html
+  retrieved_at: '2026-10-03'
+  category: official-platform
+  status: current
+  normative_or_informative: implementation-reference
+  license_or_usage_notes: 仅转述。
+  notes: GtkAccessible 通过平台无障碍后端暴露角色、状态、属性和关系。
+- id: libadwaita
+  title: libadwaita documentation
+  organization: GNOME
+  url: https://gnome.pages.gitlab.gnome.org/libadwaita/doc/
+  retrieved_at: '2026-10-03'
+  category: official-platform
+  status: current
+  normative_or_informative: implementation-reference
+  license_or_usage_notes: LGPL-2.1-or-later；本仓库不复制其实现。
+  notes: Adwaita 是 GNOME 设计体系，不等于 Material 3。
+- id: qt-material-style
+  title: Qt Quick Controls Material Style
+  organization: Qt
+  url: https://doc.qt.io/qt-6/qtquickcontrols-material.html
+  retrieved_at: '2026-10-03'
+  category: official-platform
+  status: current
+  normative_or_informative: implementation-reference
+  license_or_usage_notes: 遵守 Qt 文档许可。
+  notes: Qt Material Style 基于 Google Material Design Guidelines，但不能据此假定完整符合本仓库 Classic M3 baseline。
+- id: wai-aria-apg
+  title: ARIA Authoring Practices Guide
+  organization: W3C WAI
+  url: https://www.w3.org/WAI/ARIA/apg/
+  retrieved_at: '2026-10-03'
+  category: accessibility
+  status: current
+  normative_or_informative: informative-practices
+  license_or_usage_notes: APG 示例不是完整生产设计系统；用于 Web 语义和键盘交互。
+  notes: Web 复杂组件的语义、焦点和键盘行为参考。
+- id: wcag22
+  title: Web Content Accessibility Guidelines (WCAG) 2.2
+  organization: W3C
+  url: https://www.w3.org/TR/WCAG22/
+  retrieved_at: '2026-10-03'
+  category: accessibility
+  status: recommendation
+  normative_or_informative: normative-web-accessibility
+  license_or_usage_notes: 仅引用要求，不复制规范正文。
+  notes: Web 无障碍合规基线之一。

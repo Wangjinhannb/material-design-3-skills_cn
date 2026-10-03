@@ -1,0 +1,35 @@
+schema_version: 1
+project_version: 0.1.0
+baseline_id: classic-md3-2024-zh-cn
+display_name: Classic Material Design 3 中文跨平台基线
+design_scope: Material Design 3 (Classic / pre-Expressive semantics)
+historical_cutoff: '2024-12-31'
+implementation_compatibility_checked_at: '2026-10-03'
+policy:
+  include:
+  - Classic Material Design 3 color roles
+  - Material You dynamic color concepts
+  - Classic M3 typography, shape, elevation, states, motion, adaptive guidance
+  - Classic M3 component catalog
+  exclude:
+  - Material 3 Expressive-only components
+  - Expressive-only motion or shape systems
+  - Material 2 and Material 1
+  - Platform visual design systems such as Fluent, Apple HIG visual language, HarmonyOS Design, Adwaita
+  current_api_rule: 可以使用当前平台 API 实现 Classic M3，但不得因当前 API 新增 Expressive 能力而扩大本 baseline。
+  uncertain_rule: 无法确认是否属于 Classic M3 的规则必须标记 unverified，不得进入 normative spec。
+provenance_classes:
+  official-md3: Google Material Design 3 官方设计规则
+  platform-adaptation: 把 Classic M3 映射到目标平台的工程规则
+  repo-convention: 本仓库为一致性、生成、测试和维护增加的工程约定
+normative_keywords:
+- MUST
+- MUST NOT
+- SHOULD
+- SHOULD NOT
+- MAY
+known_risks:
+- m3.material.io 当前内容可能混入 Expressive
+- Android Compose Material3 当前包同时包含 Classic 和 Expressive API
+- 非 Android 平台没有等价的官方完整 M3 组件库
+- '@material/web 处于 maintenance mode'

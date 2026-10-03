@@ -1,0 +1,88 @@
+schema_version: 1
+cases:
+- id: build-web
+  mode: Build
+  prompt: 用 HTML/CSS/JS 写一个 Material Design 3 设置页
+  expected_platform: web
+  required_refs:
+  - core.md
+  - components.md
+  - accessibility.md
+  - platform-web.md
+  forbidden:
+  - Material 2
+  - M3 Expressive
+- id: build-arkts
+  mode: Build
+  prompt: 用 ArkTS 写一个 M3 音乐播放器首页
+  expected_platform: harmonyos
+  required_refs:
+  - core.md
+  - components.md
+  - accessibility.md
+  - platform-harmonyos.md
+  forbidden:
+  - ArkUI 官方 Material 3
+  - M3 Expressive
+- id: build-android
+  mode: Build
+  prompt: 用 Jetpack Compose Material 3 写一个登录页
+  expected_platform: android
+  required_refs:
+  - core.md
+  - components.md
+  - accessibility.md
+  - platform-android.md
+  forbidden:
+  - androidx.compose.material.MaterialTheme
+- id: build-ios
+  mode: Build
+  prompt: 用 SwiftUI 写一个 Material Design 3 设置页
+  expected_platform: ios
+  required_refs:
+  - core.md
+  - components.md
+  - accessibility.md
+  - platform-ios.md
+  forbidden:
+  - SwiftUI 原生支持 Material 3
+- id: build-windows
+  mode: Build
+  prompt: 用 WinUI 3 写一个 M3 桌面设置页面
+  expected_platform: windows
+  required_refs:
+  - core.md
+  - components.md
+  - accessibility.md
+  - platform-windows.md
+  forbidden:
+  - WinUI 3 就是 Material 3
+- id: audit
+  mode: Audit
+  prompt: 审查这个现有 UI 是否符合 Material Design 3
+  expected_platform: infer
+  required_refs:
+  - core.md
+  - components.md
+  - accessibility.md
+  - audit.md
+  forbidden:
+  - 只给视觉主观评价
+- id: explain
+  mode: Explain
+  prompt: M3 的 surfaceContainerHigh 是什么
+  expected_platform: none
+  required_refs:
+  - core.md
+  - color.md
+  forbidden:
+  - 把平台实现写成唯一官方规则
+- id: anti-expressive
+  mode: Audit
+  prompt: 严格按传统 Material Design 3 检查有没有混入 M3 Expressive
+  expected_platform: infer
+  required_refs:
+  - source-policy.md
+  - audit.md
+  forbidden:
+  - 建议使用 Expressive-only 组件

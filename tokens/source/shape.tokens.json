@@ -1,0 +1,16 @@
+{
+  "format": "repo-md3-token-v1",
+  "provenance": "official-md3",
+  "baseline": "classic-md3-2024-zh-cn",
+  "corner": {
+    "none": 0,
+    "extraSmall": 4,
+    "small": 8,
+    "medium": 12,
+    "large": 16,
+    "extraLarge": 28,
+    "full": 9999
+  },
+  "unit": "logical-px",
+  "note": "full 为语义值，生成时映射为足够大的圆角或平台胶囊形状。"
+}

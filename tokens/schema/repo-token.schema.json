@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/repo-md3-token-v1.json",
+  "title": "Repository MD3 Token Subset",
+  "type": "object",
+  "description": "仓库内部非颜色 token 的最小校验结构。颜色文件遵循 DTCG 2025.10 颜色 token 结构，并由仓库 validator 做子集校验。",
+  "properties": {
+    "format": {
+      "const": "repo-md3-token-v1"
+    },
+    "baseline": {
+      "type": "string"
+    },
+    "provenance": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "format",
+    "baseline",
+    "provenance"
+  ]
+}

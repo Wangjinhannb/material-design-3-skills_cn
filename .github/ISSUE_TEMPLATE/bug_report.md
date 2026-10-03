@@ -6,14 +6,14 @@ labels: bug
 assignees: ''
 ---
 
-## Area
+## 范围
 
-## Platform / version
+## 平台与版本
 
-## Expected
+## 预期结果
 
-## Actual
+## 实际结果
 
-## Evidence / official source
+## 依据与官方来源
 
-## Reproduction
+## 复现步骤

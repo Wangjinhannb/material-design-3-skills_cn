@@ -7,12 +7,18 @@ generate:
 
 validate:
 	python tools/validators/validate_repo.py
+	python tools/validators/check_writing_style.py
+	python tools/validators/validate_catalog_coverage.py
+	python tools/validators/validate_reference_coverage.py
+	python tools/validators/validate_harmonyos.py
 	python tools/validators/validate_skill_evals.py
 	python tools/validators/check_generated_determinism.py
 
 test:
 	python -m unittest discover -s tests -p 'test_*.py'
 	node --check examples/reference-app/web/app.js
+	node --check examples/component-catalog/web/app.js
+	node --check examples/component-catalog/web/playwright.config.js
 
 check: generate validate test
 

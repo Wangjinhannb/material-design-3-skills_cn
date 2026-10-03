@@ -1,4 +1,4 @@
-﻿# Governance
+﻿# 治理
 
 重大规范和架构变更必须先写 ADR，再修改 canonical data。
 

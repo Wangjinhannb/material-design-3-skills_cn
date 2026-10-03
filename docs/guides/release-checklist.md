@@ -1,4 +1,4 @@
-﻿# Release Checklist
+﻿# 发布检查清单
 
 - [ ] source manifest 已更新日期和状态
 - [ ] compatibility 已复核

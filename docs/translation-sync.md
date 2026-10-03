@@ -1,4 +1,4 @@
-﻿# Chinese / English Edition Sync
+﻿# 中英文版本同步
 
 本中文版未来与英文版分开部署，但两者不应演化成两个设计系统。
 
@@ -23,4 +23,4 @@
 3. 两个版本各自运行 validator；
 4. release notes 标明 sibling version。
 
-不要用“整仓库机器翻译”覆盖代码、ID、URL 或 YAML key。
+代码、ID、URL 和 YAML key 在中英文版本中保持不变。

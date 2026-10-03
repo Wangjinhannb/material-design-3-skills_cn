@@ -260,7 +260,8 @@ sources:
   status: current
   normative_or_informative: implementation-reference
   license_or_usage_notes: 遵守 Qt 文档许可。
-  notes: Qt Material Style 基于 Google Material Design Guidelines，但不能据此假定完整符合本仓库 Classic M3 baseline。
+  notes: Qt Material Style 基于 Google Material Design Guidelines，但不能据此假定完整符合本仓库 Classic
+    M3 baseline。
 - id: wai-aria-apg
   title: ARIA Authoring Practices Guide
   organization: W3C WAI
@@ -281,3 +282,63 @@ sources:
   normative_or_informative: normative-web-accessibility
   license_or_usage_notes: 仅引用要求，不复制规范正文。
   notes: Web 无障碍合规基线之一。
+- id: android-compose-bom
+  title: Use a Bill of Materials
+  organization: Google Android Developers
+  url: https://developer.android.com/develop/ui/compose/bom
+  retrieved_at: '2026-10-03'
+  category: official-implementation
+  status: current
+  normative_or_informative: implementation-version-source
+  license_or_usage_notes: 仅记录依赖管理方式和版本。
+  notes: 2026-09 stable BOM 示例为 2026.09.00。
+- id: android-agp
+  title: About Android Gradle plugin
+  organization: Google Android Developers
+  url: https://developer.android.com/build/releases/about-agp
+  retrieved_at: '2026-10-03'
+  category: official-implementation
+  status: current
+  normative_or_informative: build-tool-reference
+  license_or_usage_notes: 仅记录构建兼容性。
+  notes: AGP 8.13 requires Gradle 8.13；仓库示例使用该组合以降低迁移面。
+- id: kotlin-releases
+  title: Kotlin release process
+  organization: JetBrains
+  url: https://kotlinlang.org/docs/releases.html
+  retrieved_at: '2026-10-03'
+  category: official-platform
+  status: current
+  normative_or_informative: build-tool-reference
+  license_or_usage_notes: 仅记录版本。
+  notes: Kotlin 2.4.20 于 2026-09-07 发布。
+- id: windows-appsdk-1-8
+  title: Windows App SDK 1.8 release notes
+  organization: Microsoft Learn
+  url: https://learn.microsoft.com/windows/apps/windows-app-sdk/release-notes/windows-app-sdk-1-8
+  retrieved_at: '2026-10-03'
+  category: official-platform
+  status: current
+  normative_or_informative: implementation-version-source
+  license_or_usage_notes: 仅记录版本。
+  notes: 当前稳定维护线 1.8；示例使用 1.8.260921001。
+- id: playwright-releases
+  title: Playwright release notes
+  organization: Microsoft Playwright
+  url: https://playwright.dev/docs/release-notes
+  retrieved_at: '2026-10-03'
+  category: test-tooling
+  status: current
+  normative_or_informative: tool-version-source
+  license_or_usage_notes: Apache-2.0。
+  notes: Web Catalog 测试固定 Playwright 1.63.0。
+- id: axe-playwright
+  title: '@axe-core/playwright'
+  organization: Deque Systems
+  url: https://www.npmjs.com/package/@axe-core/playwright
+  retrieved_at: '2026-10-03'
+  category: test-tooling
+  status: current
+  normative_or_informative: tool-version-source
+  license_or_usage_notes: MPL-2.0。
+  notes: Web accessibility 测试固定 4.13.0。

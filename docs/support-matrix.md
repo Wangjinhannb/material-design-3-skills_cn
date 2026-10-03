@@ -1,8 +1,8 @@
-﻿# Support Matrix
+﻿# 支持矩阵
 
-本表由 metadata 生成，不要手工修改。格式：`framework_relation / repo_status`。
+本表由 metadata 生成。格式：`framework_relation / repo_status`。
 
-| Component | web | android | harmonyos | ios | windows | linux-gtk | linux-qt |
+| 组件 | web | android | harmonyos | ios | windows | linux-gtk | linux-qt |
 |---|---|---|---|---|---|---|---|
 | `buttons` | custom-md3 / experimental | official-native / documented | custom-md3 / documented | custom-md3 / documented | custom-md3 / documented | custom-md3 / documented | partial / documented |
 | `floating-action-button` | custom-md3 / experimental | official-native / documented | custom-md3 / documented | custom-md3 / documented | custom-md3 / documented | custom-md3 / documented | partial / documented |

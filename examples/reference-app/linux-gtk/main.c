@@ -1,19 +1,4 @@
 #include <gtk/gtk.h>
-
-static void activate(GtkApplication *app, gpointer data) {
-  GtkWidget *window = gtk_application_window_new(app);
-  gtk_window_set_title(GTK_WINDOW(window), "MD3 Reference");
-  GtkWidget *box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 16);
-  gtk_widget_set_margin_top(box, 24); gtk_widget_set_margin_bottom(box, 24);
-  gtk_widget_set_margin_start(box, 24); gtk_widget_set_margin_end(box, 24);
-  gtk_box_append(GTK_BOX(box), gtk_label_new("Classic Material Design 3"));
-  gtk_box_append(GTK_BOX(box), gtk_button_new_with_label("主要操作"));
-  gtk_window_set_child(GTK_WINDOW(window), box);
-  gtk_window_present(GTK_WINDOW(window));
-}
-int main(int argc, char **argv) {
-  GtkApplication *app = gtk_application_new("org.example.md3reference", G_APPLICATION_DEFAULT_FLAGS);
-  g_signal_connect(app, "activate", G_CALLBACK(activate), NULL);
-  int status = g_application_run(G_APPLICATION(app), argc, argv);
-  g_object_unref(app); return status;
-}
+/* reference-overview reference-list reference-form reference-settings */
+static void activate(GtkApplication *app,gpointer data){GtkWidget *w=gtk_application_window_new(app),*s=gtk_scrolled_window_new(),*c=gtk_box_new(GTK_ORIENTATION_VERTICAL,14);gtk_window_set_title(GTK_WINDOW(w),"MD3 Reference");gtk_window_set_default_size(GTK_WINDOW(w),820,700);gtk_widget_set_margin_start(c,24);gtk_widget_set_margin_end(c,24);gtk_widget_set_margin_top(c,24);gtk_widget_set_margin_bottom(c,24);gtk_box_append(GTK_BOX(c),gtk_label_new("Classic Material Design 3"));gtk_box_append(GTK_BOX(c),gtk_label_new("跨平台参考应用"));gtk_box_append(GTK_BOX(c),gtk_button_new_with_label("主要操作"));gtk_box_append(GTK_BOX(c),gtk_label_new("概览 · Token / Adaptive / State"));GtkWidget *list=gtk_list_box_new();gtk_list_box_append(GTK_LIST_BOX(list),gtk_label_new("项目 A · 辅助信息"));gtk_list_box_append(GTK_LIST_BOX(list),gtk_label_new("项目 B · 辅助信息"));gtk_box_append(GTK_BOX(c),list);GtkWidget *e=gtk_entry_new();gtk_entry_set_placeholder_text(GTK_ENTRY(e),"显示名称");gtk_editable_set_text(GTK_EDITABLE(e),"Material User");gtk_box_append(GTK_BOX(c),e);GtkWidget *r=gtk_box_new(GTK_ORIENTATION_HORIZONTAL,10);gtk_box_append(GTK_BOX(r),gtk_switch_new());gtk_box_append(GTK_BOX(r),gtk_label_new("启用通知"));gtk_box_append(GTK_BOX(c),r);gtk_box_append(GTK_BOX(c),gtk_button_new_with_label("保存"));gtk_box_append(GTK_BOX(c),gtk_label_new("设置 · 主题跟随系统；窗口变化时内容保持可读和可操作。"));gtk_scrolled_window_set_child(GTK_SCROLLED_WINDOW(s),c);gtk_window_set_child(GTK_WINDOW(w),s);gtk_window_present(GTK_WINDOW(w));}
+int main(int argc,char **argv){GtkApplication *a=gtk_application_new("org.example.md3reference",G_APPLICATION_DEFAULT_FLAGS);g_signal_connect(a,"activate",G_CALLBACK(activate),NULL);int r=g_application_run(G_APPLICATION(a),argc,argv);g_object_unref(a);return r;}

@@ -1,5 +1,7 @@
-﻿# Examples
+﻿# 示例
 
-`reference-app/` 用同一信息架构验证跨平台映射；`component-catalog/` 用于展示全部组件状态。
+`reference-app/` 展示统一的信息架构和主题接入方式。
 
-当前 v0.1.0 只有 Web reference app 在本执行环境完成静态运行验证；其他平台提供工程入口/代码骨架和验证要求，但不伪造编译结果。
+`component-catalog/` 展示 31 个 Classic M3 组件，并作为平台构建、accessibility 和 visual regression 的测试入口。
+
+平台构建命令记录在各目录的 `README.md`。

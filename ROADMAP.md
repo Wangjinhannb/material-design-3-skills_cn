@@ -1,22 +1,24 @@
-﻿# Roadmap
+﻿# 路线图
 
-## v0.1.x - 工程基线
+## v0.2
 
-- 固定 Classic M3 baseline、来源、组件清单和 token schema。
-- 完善全部平台的设计映射与反幻觉约束。
-- 保持所有生成文件可通过 CI 重建。
+- 七个平台 Reference App 工程化。
+- 七个平台 31 组件 Component Catalog。
+- Web accessibility 与 visual regression。
+- Android、iOS、Windows、GTK、Qt 平台构建 CI。
+- HarmonyOS 工程结构与静态验证。
+- 文档语气和写作规则统一。
 
-## v0.2.x - 可运行参考实现
+## v0.3
 
-- 完成 Web Reference App 的交互与可访问性测试。
-- 在具备 Android SDK 的环境建立 Compose Material 3 Reference App 构建验证。
-- 在 DevEco Studio、Xcode、Windows App SDK、GTK4、Qt6 对应环境逐一完成真实编译记录。
+- Android emulator screenshot baseline 与交互测试扩展。
+- iOS screenshot baseline 固化。
+- Windows 可交互 runner 的 screenshot/accessibility 流程。
+- GTK/Qt accessibility 自动化覆盖扩展。
+- HarmonyOS DevEco CI 或自托管 runner。
+- 组件 variant 覆盖矩阵。
 
-## v0.3.x - 组件目录与视觉回归
+## v1.0
 
-- 为全部 31 个 Classic M3 组件建立跨平台 Component Catalog。
-- 建立 screenshot/golden testing，并区分语义一致性与平台渲染差异。
-
-## v1.0.0 - 稳定版
-
-只有当 support matrix 中标记为 stable 的平台具备真实构建、测试、无障碍验证和已记录兼容性版本后才发布 1.0.0。
+- 31 个组件在所有 stable 平台完成 variant、state、accessibility 和 visual coverage。
+- 发布流程、兼容矩阵和迁移指南稳定。

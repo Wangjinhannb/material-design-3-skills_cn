@@ -1,8 +1,8 @@
-﻿# Platform Adaptation Policy
+﻿# 平台适配规则
 
 视觉语言统一不等于系统行为统一。
 
-MUST 统一：
+必须 统一：
 
 - Material color role 语义；
 - type role 层级；
@@ -10,7 +10,7 @@ MUST 统一：
 - Material component purpose 与状态；
 - 品牌和内容结构。
 
-MUST 尊重平台：
+必须 尊重平台：
 
 - safe area / system bars；
 - 返回和系统导航；

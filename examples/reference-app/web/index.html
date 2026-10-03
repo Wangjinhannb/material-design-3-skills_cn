@@ -15,27 +15,37 @@
   <div class="shell">
     <nav class="nav" aria-label="主要导航">
       <a href="#overview" aria-current="page">概览</a>
-      <a href="#components">组件</a>
+      <a href="#list">列表</a>
+      <a href="#form">表单</a>
       <a href="#settings">设置</a>
     </nav>
-    <main id="overview">
+    <main id="overview" data-reference-id="reference-overview">
       <section class="hero">
         <p class="eyebrow">Classic Material Design 3</p>
         <h1>跨平台参考界面</h1>
         <p>该页面验证 token、卡片、按钮、表单、状态与自适应布局，不代表完整组件目录。</p>
         <div class="actions"><button class="filled">主要操作</button><button class="outlined">次要操作</button></div>
       </section>
-      <section id="components" class="grid" aria-label="示例卡片">
+      <section id="overview-cards" class="grid" aria-label="示例卡片">
         <article class="card"><h2>语义 Token</h2><p>组件颜色从 <code>--md-sys-*</code> 角色读取。</p></article>
         <article class="card"><h2>自适应</h2><p>窗口变宽后导航和内容区域重新布局，而不是按比例拉伸。</p></article>
         <article class="card"><h2>状态</h2><p>按钮具备 hover、focus-visible、pressed 与 disabled 策略。</p></article>
       </section>
-      <section id="settings" class="form-section">
-        <h2>设置示例</h2>
+
+      <section id="list" class="form-section" data-reference-id="reference-list">
+        <h2>列表</h2>
+        <div class="reference-list"><div><strong>项目 A</strong><span>辅助信息</span></div><div><strong>项目 B</strong><span>辅助信息</span></div></div>
+      </section>
+      <section id="form" class="form-section" data-reference-id="reference-form">
+        <h2>表单</h2>
         <label class="field"><span>显示名称</span><input id="name" autocomplete="name" value="Material User"></label>
         <label class="switch-row"><input type="checkbox" id="notifications"><span>启用通知</span></label>
         <button class="filled" id="save">保存</button>
         <p id="status" role="status" aria-live="polite"></p>
+      </section>
+      <section id="settings" class="form-section" data-reference-id="reference-settings">
+        <h2>设置</h2>
+        <p>主题跟随系统，也可以使用顶部按钮切换浅色和深色主题。</p>
       </section>
     </main>
   </div>

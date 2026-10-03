@@ -1,5 +1,7 @@
-﻿# Web Reference App
+﻿# Web 参考应用
 
-零构建依赖的 HTML/CSS/JavaScript 示例。它验证 token 消费、light/dark、自适应导航、focus-visible、表单语义和 reduced-motion。
+```bash
+python3 -m http.server 4173 -d ../../..
+```
 
-当前不是完整组件目录；完整 31 组件覆盖由后续 `component-catalog/` 版本推进。
+打开 `/examples/reference-app/web/`。页面覆盖概览、列表、表单和设置。

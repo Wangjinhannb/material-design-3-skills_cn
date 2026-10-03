@@ -1,3 +1,3 @@
-﻿# Interaction
+﻿# 交互
 
-实现 `:hover`、`:focus-visible`、`:active`、disabled/error/selected。不要移除 outline 后不给替代 focus indicator。
+实现 `:hover`、`:focus-visible`、`:active`、disabled/error/selected。自定义 outline 时必须提供等效的可见焦点指示。

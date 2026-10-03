@@ -1,4 +1,4 @@
-﻿# Accessibility
+﻿# 无障碍
 
 来源类别：`official-md3` + 各平台官方 accessibility API + Web WCAG/ARIA。
 
@@ -18,4 +18,4 @@ Accessibility 是组件完成定义的一部分。
 - screen reader traversal；
 - 动态内容通知。
 
-Web 自定义复杂 widget SHOULD 优先参考 WAI-ARIA APG 的语义与键盘约定，但 APG 示例不是生产设计系统，仍需结合 WCAG 与真实浏览器/AT 测试。
+Web 自定义复杂 widget 应 参考 WAI-ARIA APG 的语义与键盘约定，并结合 WCAG 与真实浏览器/AT 测试。APG 示例仅作为交互参考。

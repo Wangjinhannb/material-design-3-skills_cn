@@ -1,4 +1,4 @@
-﻿# Anti-patterns
+﻿# 常见问题
 
 - 把 Qt Material Style 自动判定为当前 M3 合规
 - 只设置 Material.primary/accent 就宣称完成 M3 theme

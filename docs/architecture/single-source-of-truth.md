@@ -1,4 +1,4 @@
-﻿# Single Source of Truth
+﻿# 单一事实源
 
 以下信息只有一个 canonical owner：
 
@@ -11,4 +11,4 @@
 | 颜色/排版/形状等 token | `tokens/source/` |
 | 设计规则解释 | `spec/` |
 
-任何生成文件如果与 source 不一致，应重新生成而不是手工修补。
+生成文件与 source 不一致时重新运行生成器。

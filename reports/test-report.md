@@ -1,30 +1,15 @@
-﻿# Test Report
+﻿# 测试报告
 
-## Automated tests
+自动测试覆盖：
 
-当前 unittest：8 项，全部通过。
+- metadata/schema；
+- 组件数量和 ID；
+- Classic M3 / Expressive 边界；
+- token 结构和生成器；
+- support matrix；
+- Skill eval case；
+- Catalog 31 组件覆盖；
+- Markdown 写作规则；
+- generated output determinism。
 
-覆盖：
-
-- 组件数量和 ID 唯一性；
-- 平台 ID 集合；
-- Classic baseline 明确排除 Expressive；
-- light/dark 关键 color roles；
-- token generator 可执行；
-- repository validator 可执行；
-- Skill eval 平台覆盖；
-- Skill eval forbidden rule 非空。
-
-JavaScript：`examples/reference-app/web/app.js` 通过 Node 22 syntax check。
-
-## Still requires target-platform testing
-
-- Android Compose compile/UI/accessibility；
-- HarmonyOS DevEco compile/preview/accessibility；
-- SwiftUI Xcode/VoiceOver/Dynamic Type；
-- WinUI 3 build/Narrator/High Contrast；
-- GTK4 build/Orca/GTK Inspector；
-- Qt6 QML/CMake/accessibility；
-- 全平台 screenshot/golden regression。
-
-这些项目在完成前不得把相应平台标记为 stable。
+平台测试由 `.github/workflows/` 执行。最近一次结果以 GitHub Actions 为准。

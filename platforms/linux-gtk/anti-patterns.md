@@ -1,4 +1,4 @@
-﻿# Anti-patterns
+﻿# 常见问题
 
 - 把 libadwaita 样式当 M3
 - 用 CSS 让控件看起来像 M3 但破坏 GtkAccessible

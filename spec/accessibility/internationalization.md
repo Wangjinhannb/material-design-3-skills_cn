@@ -1,4 +1,4 @@
-﻿# Internationalization and Localization
+﻿# 国际化与本地化
 
 所有参考实现至少测试：English、简体中文、一个 RTL 语言。
 

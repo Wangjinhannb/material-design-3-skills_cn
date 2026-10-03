@@ -1,9 +1,10 @@
-﻿# Known Limitations
+﻿# 已知限制
 
-v0.1.0 的主要限制：
+v0.2.0 当前限制：
 
-1. 当前执行环境没有 Android SDK、DevEco Studio、Xcode、Windows App SDK、GTK4/Qt6 开发包，因此这些平台尚未形成真实编译记录。
-2. Web Reference App 是架构验证示例，不是 31 组件完整 catalog。
-3. DTCG 2025.10 目前只对颜色使用规范结构；其他 token 使用显式仓库格式，避免虚假全量 DTCG 声明。
-4. Classic M3 是历史冻结 baseline，而当前 Google/Android 文档已经出现 Expressive；每次更新都需要边界审查。
-5. 自动化无障碍测试不能替代真实 screen reader、键盘和用户测试。
+1. HarmonyOS 的 GitHub-hosted runner 不提供 DevEco Studio/HarmonyOS SDK；仓库只执行工程结构与 ArkTS 静态校验，运行时验证需要 DevEco Studio 或自托管 runner。
+2. Windows hosted runner 可执行 restore/build；GUI screenshot、Narrator 和 High Contrast 自动化需要可交互 Windows runner。
+3. Web 已配置 Playwright + axe 和 visual regression；首次视觉基线由专用 workflow 生成并提交。
+4. Android、iOS、GTK、Qt 的平台 workflow 负责构建或运行检查；具体结果以对应 GitHub Actions run 为准。
+5. DTCG 2025.10 目前只用于颜色 token；其他 token 使用 `repo-md3-token-v1`。
+6. 自动无障碍检查不能覆盖真实 screen reader、键盘、触控和用户测试。

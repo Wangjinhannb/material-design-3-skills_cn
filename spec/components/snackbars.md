@@ -2,47 +2,47 @@
 
 来源类别：`official-md3`（设计语义）+ `platform-adaptation`（平台实现）。
 
-## Purpose
+## 用途
 
 短暂反馈轻量结果，并可附带一个相关操作。
 
-## Variants
+## 变体
 
 - `single-line`
 - `two-line`
 - `with-action`
 
-## States
+## 状态
 
 - `default`
 
-## Token groups
+## Token 组
 
 `color`, `typography`, `shape`, `state`
 
-## Interaction
+## 交互
 
-实现 MUST 让视觉状态、输入行为和语义状态一致。目标平台没有直接对应控件时，使用平台 primitive 组合，但不得改变组件 purpose。
+实现必须保持视觉状态、输入行为和语义状态一致。目标平台缺少直接对应控件时，使用平台 primitive 组合，并保留组件用途和交互语义。
 
-## Accessibility
+## 无障碍
 
-消息出现时不能任意抢夺焦点；重要错误不可仅靠 Snackbar。
+Snackbar 出现时保持现有焦点；重要错误同时使用持久可访问提示。
 
-## Adaptive behavior
+## 自适应
 
-遵循窗口和输入方式进行布局调整；没有专用自适应规则时也不得破坏可操作性与可读性。
+根据窗口和输入方式调整布局，并保持可操作性与可读性。
 
-## Platform considerations
+## 平台实现
 
-平台实现 MUST 查看 `platforms/<platform>/components.md` 与 `metadata/support-matrix.yaml`，不要因为存在同名原生控件就假定其视觉和状态自动符合 M3。
+平台实现必须对照 `platforms/<platform>/components.md` 与 `metadata/support-matrix.yaml`。同名原生控件仍需核对 M3 视觉、状态和语义。
 
-## Anti-patterns
+## 常见问题
 
 - 不使用任意硬编码颜色替代 color roles。
 - 不省略 focus/disabled/error 等适用状态。
 - 不把平台默认外观直接声明为 Material 3 合规。
 - 不引入 Expressive-only variant。
 
-## Official source
+## 官方来源
 
 - https://m3.material.io/components/snackbars/overview

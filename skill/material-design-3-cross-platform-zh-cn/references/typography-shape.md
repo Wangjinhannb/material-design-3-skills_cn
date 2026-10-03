@@ -1,6 +1,6 @@
-﻿# Typography and Shape
+﻿# 排版与形状
 
 Typography 使用 Display/Headline/Title/Body/Label × Large/Medium/Small。
 Shape 使用 none/extraSmall/small/medium/large/extraLarge/full。
 
-不要为单个页面随意创造字号、字重、圆角；品牌化修改应发生在 theme/token 层。
+字号、字重和圆角从 theme/token 层统一配置，页面不维护独立的一套视觉常量。

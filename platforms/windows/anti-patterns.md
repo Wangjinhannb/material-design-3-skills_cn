@@ -1,4 +1,4 @@
-﻿# Anti-patterns
+﻿# 常见问题
 
 - 把 Fluent 默认样式称为 M3
 - 只改颜色不改 shape/state/template

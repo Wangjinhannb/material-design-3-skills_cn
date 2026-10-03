@@ -1,4 +1,4 @@
-﻿# Anti-patterns
+﻿# 常见问题
 
 - 把 ArkUI 默认控件外观称为 Material 3
 - 根据记忆编造 ArkTS/ArkUI API

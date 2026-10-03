@@ -1,4 +1,4 @@
-﻿# Components
+﻿# 组件
 
 对 Qt Material Style 已有控件先做 conformance audit；不符合的 variant/state 通过自定义 style/template 实现。
 

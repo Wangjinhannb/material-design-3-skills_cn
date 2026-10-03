@@ -1,3 +1,7 @@
-﻿# Android Reference Source
+﻿# Android 参考应用
 
-该目录只提供 baseline-safe Compose 源码入口，当前环境没有 Android SDK/Gradle 工程，因此 **未声称已编译**。正式提升为 experimental/stable 前应创建完整 Gradle project、固定 AGP/Kotlin/Compose 版本并在 CI 构建。
+```bash
+gradle :app:assembleDebug
+```
+
+页面覆盖 `reference-spec.yaml` 中的概览、列表、表单和设置。

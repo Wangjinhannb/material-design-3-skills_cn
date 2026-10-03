@@ -1,12 +1,15 @@
-﻿# Changelog
+﻿# 更新日志
+
+## 0.2.0 - 2026-10-03
+
+- 增加七个平台的 31 组件 Component Catalog 工程。
+- 补齐七个平台 Reference App 工程入口。
+- 增加 Catalog 覆盖校验、Web accessibility/visual tests 和平台 build workflows。
+- 增加写作风格检查并重写仓库说明文档。
+- 更新 Windows App SDK、Playwright 和 accessibility 测试基线。
 
 ## 0.1.0 - 2026-10-03
 
-- 建立 Classic Material Design 3 中文 baseline 与来源追踪机制。
-- 建立 31 个 Classic M3 核心组件目录及跨平台支持矩阵。
-- 建立 light/dark reference color tokens、排版、形状、elevation、state 与 motion token。
-- 建立 Web、Android、HarmonyOS、iOS、Windows、Linux GTK、Linux Qt 平台映射文档。
-- 建立中文 AI Skill，支持 Build、Audit、Refactor、Explain 四种工作模式。
-- 建立 token 生成器、组件文档生成器、支持矩阵生成器、仓库 validator、Skill 静态审计脚本与测试。
-- 建立 GitHub Actions 基础 CI 与来源 freshness 检查。
-- 当前只对 Web/Python/JavaScript 进行本环境运行验证；其余平台未声称已编译。
+- 建立 Classic M3 baseline、来源清单和跨平台 token pipeline。
+- 建立 31 个组件规范和支持矩阵。
+- 建立中文 AI Skill。

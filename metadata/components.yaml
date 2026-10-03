@@ -47,7 +47,7 @@ components:
   - typography
   - shape
   - state
-  adaptive: 不要把 FAB 当作所有页面的必需元素；大屏可根据信息架构调整位置。
+  adaptive: FAB 只用于高优先级操作；大屏布局可根据信息架构调整位置。
   accessibility: 图标型 FAB 必须具有可访问名称。
   official_url: https://m3.material.io/components/floating-action-button/overview
   baseline: classic-md3-2024-zh-cn
@@ -113,7 +113,7 @@ components:
   - shape
   - state
   adaptive: ''
-  accessibility: 不要让徽标成为唯一信息来源；数量或状态应可被辅助技术获取。
+  accessibility: 徽标数量或状态需同时提供辅助技术可读取的信息。
   official_url: https://m3.material.io/components/badges/overview
   baseline: classic-md3-2024-zh-cn
 - id: progress-indicators
@@ -152,7 +152,7 @@ components:
   - shape
   - state
   adaptive: ''
-  accessibility: 消息出现时不能任意抢夺焦点；重要错误不可仅靠 Snackbar。
+  accessibility: Snackbar 出现时保持现有焦点；重要错误同时使用持久可访问提示。
   official_url: https://m3.material.io/components/snackbars/overview
   baseline: classic-md3-2024-zh-cn
 - id: tooltips
@@ -171,7 +171,7 @@ components:
   - shape
   - state
   adaptive: ''
-  accessibility: 不能把完成任务所必需的信息只藏在 hover 中；键盘焦点也应可触达。
+  accessibility: 完成任务所需的信息应在键盘焦点和非 hover 场景下可获取。
   official_url: https://m3.material.io/components/tooltips/overview
   baseline: classic-md3-2024-zh-cn
 - id: bottom-sheets
@@ -239,7 +239,7 @@ components:
   - shape
   - state
   adaptive: ''
-  accessibility: 必须提供可预测的键盘/辅助技术浏览方式，并避免自动滚动造成障碍。
+  accessibility: 提供可预测的键盘和辅助技术浏览方式；自动滚动需可停止或关闭。
   official_url: https://m3.material.io/components/carousel/overview
   baseline: classic-md3-2024-zh-cn
 - id: dialogs
@@ -526,7 +526,7 @@ components:
   - shape
   - state
   adaptive: ''
-  accessibility: 不同 chip 类型必须有与行为一致的角色，不要一律伪装成按钮。
+  accessibility: 不同 chip 类型使用与行为一致的语义角色。
   official_url: https://m3.material.io/components/chips/overview
   baseline: classic-md3-2024-zh-cn
 - id: date-pickers

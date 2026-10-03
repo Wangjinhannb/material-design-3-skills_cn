@@ -2,16 +2,16 @@
 
 来源类别：`official-md3`（设计语义）+ `platform-adaptation`（平台实现）。
 
-## Purpose
+## 用途
 
 在较宽窗口中从侧边提供补充内容。
 
-## Variants
+## 变体
 
 - `standard`
 - `modal`
 
-## States
+## 状态
 
 - `default`
 - `hovered`
@@ -19,33 +19,33 @@
 - `pressed`
 - `disabled`
 
-## Token groups
+## Token 组
 
 `color`, `typography`, `shape`, `state`
 
-## Interaction
+## 交互
 
-实现 MUST 让视觉状态、输入行为和语义状态一致。目标平台没有直接对应控件时，使用平台 primitive 组合，但不得改变组件 purpose。
+实现必须保持视觉状态、输入行为和语义状态一致。目标平台缺少直接对应控件时，使用平台 primitive 组合，并保留组件用途和交互语义。
 
-## Accessibility
+## 无障碍
 
 模态版本需要焦点约束与关闭机制。
 
-## Adaptive behavior
+## 自适应
 
 主要用于具备足够宽度的界面；紧凑窗口优先替代布局。
 
-## Platform considerations
+## 平台实现
 
-平台实现 MUST 查看 `platforms/<platform>/components.md` 与 `metadata/support-matrix.yaml`，不要因为存在同名原生控件就假定其视觉和状态自动符合 M3。
+平台实现必须对照 `platforms/<platform>/components.md` 与 `metadata/support-matrix.yaml`。同名原生控件仍需核对 M3 视觉、状态和语义。
 
-## Anti-patterns
+## 常见问题
 
 - 不使用任意硬编码颜色替代 color roles。
 - 不省略 focus/disabled/error 等适用状态。
 - 不把平台默认外观直接声明为 Material 3 合规。
 - 不引入 Expressive-only variant。
 
-## Official source
+## 官方来源
 
 - https://m3.material.io/components/side-sheets/overview

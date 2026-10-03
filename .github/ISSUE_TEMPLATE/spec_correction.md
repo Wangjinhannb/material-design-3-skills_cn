@@ -6,10 +6,10 @@ labels: spec
 assignees: ''
 ---
 
-## Current rule
+## 当前规则
 
-## Proposed correction
+## 修正建议
 
-## Official source and date
+## 官方来源与日期
 
-## Classic vs Expressive classification
+## Classic / Expressive 分类

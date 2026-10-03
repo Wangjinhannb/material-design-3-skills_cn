@@ -1,4 +1,4 @@
-﻿# Components
+﻿# 组件
 
 能保留 WinUI 控件语义和输入行为时优先 styling；如果模板结构与 M3 冲突，再使用 custom template/control。
 

@@ -1,4 +1,4 @@
-﻿# Token Generator
+﻿# Token 生成器
 
 生成器只从 `tokens/source/` 读取 canonical token。`tokens/generated/` 中的文件不得手工编辑。
 

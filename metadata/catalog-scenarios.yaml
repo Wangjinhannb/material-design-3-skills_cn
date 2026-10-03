@@ -1,0 +1,378 @@
+schema_version: 1
+component_count: 31
+components:
+- id: buttons
+  test_id: component-buttons
+  name_zh: 按钮
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - elevated
+  - filled
+  - filled-tonal
+  - outlined
+  - text
+- id: floating-action-button
+  test_id: component-floating-action-button
+  name_zh: 浮动操作按钮
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - small
+  - regular
+  - large
+  - extended
+- id: icon-buttons
+  test_id: component-icon-buttons
+  name_zh: 图标按钮
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - standard
+  - filled
+  - filled-tonal
+  - outlined
+  - toggle
+- id: segmented-buttons
+  test_id: component-segmented-buttons
+  name_zh: 分段按钮
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - single-select
+  - multi-select
+- id: badges
+  test_id: component-badges
+  name_zh: 徽标
+  required_states:
+  - default
+  variants:
+  - small
+  - large
+- id: progress-indicators
+  test_id: component-progress-indicators
+  name_zh: 进度指示器
+  required_states:
+  - default
+  variants:
+  - linear-determinate
+  - linear-indeterminate
+  - circular-determinate
+  - circular-indeterminate
+- id: snackbars
+  test_id: component-snackbars
+  name_zh: Snackbar
+  required_states:
+  - default
+  variants:
+  - single-line
+  - two-line
+  - with-action
+- id: tooltips
+  test_id: component-tooltips
+  name_zh: 工具提示
+  required_states:
+  - hidden
+  - visible
+  variants:
+  - plain
+  - rich
+- id: bottom-sheets
+  test_id: component-bottom-sheets
+  name_zh: 底部 Sheet
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - standard
+  - modal
+- id: cards
+  test_id: component-cards
+  name_zh: 卡片
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - elevated
+  - filled
+  - outlined
+- id: carousel
+  test_id: component-carousel
+  name_zh: 轮播
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - multi-browse
+  - uncontained
+  - hero
+- id: dialogs
+  test_id: component-dialogs
+  name_zh: 对话框
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - basic
+  - fullscreen
+- id: divider
+  test_id: component-divider
+  name_zh: 分隔线
+  required_states:
+  - default
+  variants:
+  - full-width
+  - inset
+- id: lists
+  test_id: component-lists
+  name_zh: 列表
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - one-line
+  - two-line
+  - three-line
+- id: side-sheets
+  test_id: component-side-sheets
+  name_zh: 侧边 Sheet
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - standard
+  - modal
+- id: bottom-app-bar
+  test_id: component-bottom-app-bar
+  name_zh: 底部应用栏
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - standard
+- id: top-app-bar
+  test_id: component-top-app-bar
+  name_zh: 顶部应用栏
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - center-aligned
+  - small
+  - medium
+  - large
+- id: navigation-bar
+  test_id: component-navigation-bar
+  name_zh: 导航栏
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - standard
+- id: navigation-drawer
+  test_id: component-navigation-drawer
+  name_zh: 导航抽屉
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - standard
+  - modal
+- id: navigation-rail
+  test_id: component-navigation-rail
+  name_zh: 导航栏轨
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - standard
+- id: search
+  test_id: component-search
+  name_zh: 搜索
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - bar
+  - view
+- id: tabs
+  test_id: component-tabs
+  name_zh: 标签页
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - primary
+  - secondary
+- id: checkbox
+  test_id: component-checkbox
+  name_zh: 复选框
+  required_states:
+  - unchecked
+  - checked
+  - indeterminate
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - unchecked
+  - checked
+  - indeterminate
+- id: chips
+  test_id: component-chips
+  name_zh: Chip
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - assist
+  - filter
+  - input
+  - suggestion
+- id: date-pickers
+  test_id: component-date-pickers
+  name_zh: 日期选择器
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - docked
+  - modal
+  - range
+- id: menus
+  test_id: component-menus
+  name_zh: 菜单
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - dropdown
+  - contextual
+- id: radio-button
+  test_id: component-radio-button
+  name_zh: 单选按钮
+  required_states:
+  - unselected
+  - selected
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - unselected
+  - selected
+- id: sliders
+  test_id: component-sliders
+  name_zh: 滑块
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - continuous
+  - discrete
+  - range
+- id: switch
+  test_id: component-switch
+  name_zh: 开关
+  required_states:
+  - 'off'
+  - 'on'
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - 'off'
+  - 'on'
+- id: time-pickers
+  test_id: component-time-pickers
+  name_zh: 时间选择器
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - dial
+  - input
+- id: text-fields
+  test_id: component-text-fields
+  name_zh: 文本字段
+  required_states:
+  - empty
+  - focused
+  - populated
+  - error
+  - disabled
+  variants:
+  - filled
+  - outlined

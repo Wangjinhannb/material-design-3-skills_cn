@@ -9,18 +9,29 @@ android:
   compose_material3_adaptive_stable: 1.3.0
   adaptive_release_date: '2026-09-09'
   policy: 仅采用 Classic M3 API/行为；Expressive-only API 禁止进入 baseline。
+  compose_bom: 2026.09.00
+  agp: 8.13.0
+  gradle: '8.13'
+  kotlin: 2.4.20
+  compile_sdk: 36
 web:
   material_web_status: maintenance-mode
   policy: 不将 @material/web 作为唯一或强制依赖。
+  playwright: 1.63.0
+  axe_playwright: 4.13.0
 harmonyos:
   version: not-pinned
   policy: 以 2026-10-03 可访问官方文档为实现参考；实际 API 必须在目标 DevEco Studio/SDK 上复核。
 ios:
   version: not-pinned
   policy: 需要 macOS/Xcode 进行最终编译和 UI 验证。
+  deployment_target: '17.0'
+  project_generator: XcodeGen
 windows:
   version: not-pinned
   policy: 需要 Windows + Windows App SDK 环境验证。
+  windows_app_sdk: 1.8.260921001
+  dotnet: '9.0'
 linux_gtk:
   gtk_docs_observed: 4.23.4 docs
   libadwaita_docs_observed: 1.10.x docs

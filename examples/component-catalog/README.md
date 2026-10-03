@@ -1,5 +1,17 @@
-﻿# Component Catalog
+﻿# 组件目录
 
-目标：为 `metadata/components.yaml` 中的全部 31 个组件展示 variants、states、light/dark、adaptive 与 accessibility。
+Catalog 覆盖 `metadata/components.yaml` 中的 31 个组件。
 
-v0.1.0 先把组件目录和规范固定下来，避免在组件清单尚不稳定时复制七套 UI。后续每个平台只有在相应 catalog 可构建并通过测试后，support matrix 才能升级为 stable。
+目录：
+
+- `web/`
+- `android/`
+- `harmonyos/`
+- `ios/`
+- `windows/`
+- `linux-gtk/`
+- `linux-qt/`
+
+每个平台源文件包含 `component-<id>` 稳定标识。`tests/test_catalog_coverage.py` 检查 31 个 ID 是否全部出现。
+
+视觉和交互实现以对应平台目录、`spec/components/` 和 generated tokens 为准。

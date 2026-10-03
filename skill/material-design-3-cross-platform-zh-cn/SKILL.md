@@ -3,7 +3,7 @@ name: material-design-3-cross-platform-zh-cn
 description: 为 Web、Android、HarmonyOS、iOS、Windows、Linux GTK 和 Linux Qt 创建、审查、重构或解释严格 Classic Material Design 3 界面。用户要求 Material Design 3、M3、Material You 界面，或需要检查现有 UI 是否符合 M3、跨平台 token、组件、状态、自适应与无障碍规范时使用。必须区分 Classic M3 与 Material 3 Expressive，识别目标平台与框架，按需加载对应 reference，并禁止把平台默认视觉系统误称为官方 Material 3。
 ---
 
-# Material Design 3 Cross-Platform 中文 Skill
+# Material Design 3 跨平台中文 Skill
 
 ## 核心边界
 
@@ -61,10 +61,10 @@ Audit/Refactor 额外加载：
 
 - `references/audit.md`
 
-## Build workflow
+## Build 流程
 
 1. 识别页面目的、目标平台、主要窗口范围和输入方式。
-2. 选择 M3 组件而不是先写任意容器。
+2. 先选择 M3 组件，再确定容器结构。
 3. 绑定 color/type/shape/state token。
 4. 定义 default + 适用的 hover/focus/pressed/selected/disabled/error 状态。
 5. 处理 compact/medium/expanded 或目标平台等价窗口变化。
@@ -72,7 +72,7 @@ Audit/Refactor 额外加载：
 7. 使用对应平台原生 API 实现；没有 M3 官方组件时明确这是 adaptation。
 8. 完成后按 `references/audit.md` 自检。
 
-## Audit workflow
+## Audit 流程
 
 逐项检查：
 
@@ -90,11 +90,11 @@ Audit/Refactor 额外加载：
 
 输出 finding 时说明：文件/位置、规则类别、问题、影响、建议修复、是否必须修复。
 
-## Refactor workflow
+## Refactor 流程
 
-先保留业务逻辑和信息架构，建立 token/theme，再替换组件和状态。不要通过全局改圆角、换紫色、加阴影来伪装成 Material 3。
+先保留业务逻辑和信息架构，建立 token/theme，再替换组件和状态。全局圆角、统一换色或增加阴影不能作为 M3 重构方案。
 
-## Explain workflow
+## Explain 流程
 
 区分：
 
